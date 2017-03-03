@@ -22,10 +22,11 @@ tags = {
 def encode(tag, attr):
 	tags = soup.find_all(tag)
 	for tag in tags:
-		mimetype = mime.guess_type(tag[attr])
-		with open(f_path + tag[attr], 'rb') as attr_file:
-			encoded_uri = 'data:' + mimetype[0] + ';base64,' + base64.b64encode(attr_file.read())
-		tag[attr] = encoded_uri
+		if tag.has_attr(attr):
+			mimetype = mime.guess_type(tag[attr])
+			with open(f_path + tag[attr], 'rb') as attr_file:
+				encoded_uri = 'data:' + mimetype[0] + ';base64,' + base64.b64encode(attr_file.read())
+			tag[attr] = encoded_uri
 
 # WORK
 
@@ -52,11 +53,12 @@ for tag in styled_tags:
 
 # encode fonts
 font_css = soup.find('style', {'id': 'fonts'})
-fonts_url = re.findall(r'url\((.*?)\)', font_css.contents[0])
-for font_url in fonts_url:
-	mimetype = mime.guess_type(font_url)
-	with open(f_path + font_url, 'rb') as font_file:
-		encoded_uri = 'data:' + mimetype[0] + ';base64,' + base64.b64encode(font_file.read())
-	font_css.string = font_css.contents[0].replace(font_url, encoded_uri)
+if font_css:
+	fonts_url = re.findall(r'url\((.*?)\)', font_css.contents[0])
+	for font_url in fonts_url:
+		mimetype = mime.guess_type(font_url)
+		with open(f_path + font_url, 'rb') as font_file:
+			encoded_uri = 'data:' + mimetype[0] + ';base64,' + base64.b64encode(font_file.read())
+		font_css.string = font_css.contents[0].replace(font_url, encoded_uri)
 
 print soup
