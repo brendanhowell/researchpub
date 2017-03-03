@@ -51,7 +51,7 @@ for tag in styled_tags:
 			encoded_uri = 'data:' + mimetype[0] + ';base64,' + base64.b64encode(b_img_file.read())
 		tag['style'] = tag['style'].replace(b_img_url, encoded_uri)
 
-# encode fonts
+# encode fonts (they need to be included in an internal CSS style with the "fonts" ID)
 font_css = soup.find('style', {'id': 'fonts'})
 if font_css:
 	fonts_url = re.findall(r'url\((.*?)\)', font_css.contents[0])
