@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Choose how you feel; you have seven options</title>
+  <meta name="description" content="Emotion Analysis Software">
+
+  <!-- OPEN GRAPH METADATA, THESE ARE THE METADATA READ BY FACEBOOK. MAKE SURE TO DEFINE A GOOD OG:IMAGE -->
+  <meta property="og:title" content="Choose how you feel; you have seven options" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://networkcultures.org/longform/2017/01/25/choose-how-you-feel-you-have-seven-options/" />
+  <meta property="og:description" content="Emotion Analysis Software" />
+  <meta property="og:image" content="img/4.png" />
+
+  <link rel="icon" href="ico/favicon.png">
+
+  <!-- Bootstrap -->
+  <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link href="lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+  <link href="css/reading-pos.css" rel="stylesheet" />
+  <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+</head>
+
+<body>
+  <progress value="0" id="progressBar">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+
+  <div class="navbar navbar-fixed-top" id="top-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">INC Longforms</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">INC Home</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!-- INSERT HEADER IMAGE -->
+  <div class="wide" style="background-image:url(img/0.jpg);">
+
+    <!-- INSERT CATEGORY, TITLE, AUTHOR, DATE -->
+    <div class="col-md-8 col-md-offset-2 masthead">
+      <h6 class="main-color">EMOTION ANALYSIS SOFTWARE</h6>
+      <h1 class="sec-color h0">Choose how you feel; you have seven options</h1>
+      <h4 class="main-color">by <a href="#" class="upper">Ruben Van De Ven</a></h4> <!-- INSERT INTERNAL LINK TO BIO -->
+      <h6 class="sec-color">January 25th, 2017</h6>
+    </div>
+  </div>
+
+  <div class="container content col-md-6 col-md-offset-3">
+    <blockquote>
+    ‘Weeks ago I saw an older woman crying outside my office building as I was walking in. She was alone, and I worried she needed help. I was afraid to ask, but I set my fears aside and walked up to her. She appreciated my gesture, but said she would be fine and her husband would be along soon. With emotion enabled (Augmented Reality), I could have had far more details to help me through the situation. It would have helped me know if I should approach her. It would have also let me know how she truly felt about my talking to her.’
+
+    <cite>FOREST HANDFORD</cite>
+    </blockquote>
+
+    <p>This is how <a href="http://www.affectiva.com/blog/the-promise-of-emotion-enabled-augmented-reality-ar/">Forest Handford</a>, a software developer, outlines his ideal future for a technology that has emerged over the past years. It is known as emotion analysis software, emotion detection, emotion recognition or emotion analytics. One day, Hartford hopes, the software will aid in understanding the other’s genuine, sincere, yet unspoken feelings (‘how she <em>truly</em> felt’). Technology will guide us through a landscape of emotions, like satellite navigation technologies guide us to destinations unknown to us: we blindly trust the route that is plotted out for us. But in a world of digitized emotions, what does it <em>mean</em> to feel 63% surprised and 54% joyful?</p>
+
+    <ul class="bxslider">
+      <li><img src="img/1.png" title="Demo images from Microsoft Cognitive Services’ Emotion API" /></li>
+      <li><img src="img/2.png" title="Demo images from Microsoft Cognitive Services’ Emotion API" /></li>
+      <li><img src="img/3.png" title="Demo images from Microsoft Cognitive Services’ Emotion API" /></li>
+    </ul>
+
+    <p>Handford works in a field that has emerged at the intersection of computer science and psychology. Building tools to translate facial expressions, which have been captured using a camera, into quantified parameters, enabling comparisons and statistics. Multimillion dollar investments are made to foster a technology which is believed to facilitate new forms of human interaction, providing ‘<a href="https://www.youtube.com/watch?v=jMD1WDbCXhs&amp;feature=youtu.be&amp;t=1m24s">objective and real-time, subconscious </a><a href="https://www.youtube.com/watch?v=jMD1WDbCXhs&amp;feature=youtu.be&amp;t=1m24s">feedback</a>’ on what ‘people really feel’ by using man’s ‘best window into the brain’. In certain academic fields the expectations rise high: in a conversation I had with Theo Gevers, professor Computer Vision and co-founder of SightCorp, he dubbed emotion analysis software to be the first step towards a morality aware artificial intelligence.</p>
+
+    <video controls>
+      <source src="video/emotion-analysis-software.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <small class="video-caption">An introduction into emotion recognition technology.</small>
+
+    <p>Despite the faith in the capabilities of the technology, there are some fundamental assumptions underlying it that undermine its status as an objective entity. In what follows I will therefore expand on the goals of these software companies, revealing a paradox in the desire to measure and objectify a person’s mental state. Note that it are not the technological methods (such as machine learning algorithms) in and of themselves that I will discuss in this article; what I want to focus on here are the ways in which these methods are employed and promoted. Nevertheless, as I will show, the story of emotion analysis software can serve as a case-study for claims that are common in a broader big data narrative: that the use of massive data analysis could create an extra-human, objective perspective on the human condition. A claim I believe is flawed.</p>
+
+    <h2>Measuring E-Motions</h2>
+
+    <p>Emotion analysis software started off as a technology targeted at people on the autistic spectrum, it seems however to have shifted to a primarily financial narrative:</p>
+
+    <blockquote>
+      ‘Deep insight into consumers’ unfiltered and unbiased emotional reactions to digital content is the ideal way to judge your content’s likability, its effectiveness, and its virality potential.’
+      <cite>Affectiva</cite>
+    </blockquote> 
+
+    <blockquote>
+      ‘Emotions drive spending.’
+      <cite>EMOTIENT</cite>
+    </blockquote> 
+
+    <blockquote>
+      ‘The more people feel, the more they spend. Research has firmly established that emotional content is the key to successful media and business results. Intangible ‘emotions’ translate into concrete social activity, brand awareness, and profit.’
+      <cite>REALEYES</cite>
+    </blockquote>
+
+    <p>Apparently, the fight over the consumer’s attention is so urgent and the importance of emotions so apparent, that many emotion analysis products are framed as tools to objectively map these ‘intangible’ mental states. Nowadays, the software is available for all sorts of devices such as laptops, phones, cars, televisions, wearables and even billboards. The Amsterdam based SightCorp for example, has introduced billboards at Schiphol Airport that keep track of the responses of passers-by, so advertisers can ‘optimize’ their advertisements for maximum attention. Most other companies in the field offer similar ways to measure responses to video advertisements.</p>
+
+    <p>Often, they also provide access to their emotion analysis algorithms for other software developers (by means of an Application Program Interface (API) or Software Development Kit (SDK)), which means other applications for the technology are emerging fast. For example, companies such as <a href="http://www.clearwater.report/pba-report">Clearwater</a> and <a href="http://www.affectiva.com/news/watch-ai-platform-assess-trumps-clintons-emotional-intelligence/">HireV</a><a href="http://www.affectiva.com/news/watch-ai-platform-assess-trumps-clintons-emotional-intelligence/">ue</a> use emotion analysis software to compress recruitment processes – cutting back on relatively expensive job interviews. Another example can be found in an <a href="http://www.newyorker.com/magazine/2015/01/19/know-feel">interview </a><a href="http://www.newyorker.com/magazine/2015/01/19/know-feel">w</a><a href="http://www.newyorker.com/magazine/2015/01/19/know-feel">ith Rana El Kaliouby</a>, founder of Affectiva. She describes a project in which the company would work with live footage from video surveillance cameras (CCTV). Their technology would be added onto an existing camera infrastructure to measure the emotional wellness of various neighborhoods. Other companies, such as Sightcorp, suggest the use of emotion analysis software in surveillance systems as well.</p>
+
+    <p>Some people in the industry seem to be aware of a fragile balance between the attempt to do good and arming an Orwellian Thought Police. That is the reason, for example, why SightCorp doesn’t take on any military oriented contracts. Nevertheless, it is not solely a governmental Big Brother who likes to monitor: when one considers that many ‘smart’ televisions already send information obtained through the internal microphone and webcam to their manufacturers, the step to include emotion data seems small. Most companies developing e-motion software let the ideal of a life and society optimized for wellness prevail over their fears:</p>
+
+    <blockquote>
+      <span>‘I do believe that if we have information about your emotional experiences we can help you be in a more positive mood and influence your wellness.’</span>
+      <cite>RANA EL KALIOUBY, FOUNDER OF AFFECTIVA</cite>
+    </blockquote>
+
+    <p>According to the industry, measuring what makes people happy or sad empowers them to change their lifestyles and be in a more ‘positive’ mood. However, for a Caring Little Sister, this positive lifestyle can not be seen without commercial benefits, so certain moods could even lead to some sort of rewards, as El Kaliouby suggests: ‘Kleenex can send you a coupon – I don’t know – when you get over a sad moment.’</p>
+
+    <video controls>
+      <source src="video/ebay.mkv" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <small class="video-caption">eBay opens the world's first emotionally powered store—30 nov 2016.</small>
+
+    <p>When attempting to understand these claims, we first need to know what the software measures. Each company in the field provides different software, yet feature sets vary only slightly. In order to theoretically account for an objective analysis of something generally seen as so ambiguous, almost all existing implementations are based on the same psychological model of emotions. When detecting a face in the image, the software translates facial expressions into seven numerical parameters, analogous to the seven pan-culturally recognized expressions of emotion as described by Paul Ekman: anger, contempt, disgust, fear, joy, sadness and surprise.</p>
+
+    <figure class="big">
+      <img src="img/4.png"/>
+      <figcaption>The emotion parameters as described in the documentation of Affectiva</figcaption>
+    </figure>
+
+    <p>Within scientific psychological discourse, there is no consensus on whether emotions and expressions of emotion are indeed evolutionary embedded in human nature, or purely culturally learned. Generally however, psychologists see it as being both: such expressions have an evolutionary basis but are highly influenced by cultural doctrine. From that perspective, explains psychologist Ursula Hess, the seven basic emotions can best be compared with a kid drawing a car: everyone will recognize it as a car, however, nowhere in real-life will one encounter a car looking like that. It is <em>prototypical</em>. Similarly, most people will categorize Ekman’s prototypical emotions in the same manner, but that does not imply that they are enacted in that exact same way in real life situations. Expressions of emotion (even sincere onces!) are generally considered to be shaped not only by a single state of mind, but by a rich context, including culture, the activity being undertaken, the mood one is in and a personal variation in physique and style.</p>
+
+    <p>Within scientific psychological discourse, there is no consensus on whether emotions and expressions of emotion are indeed evolutionary embedded in human nature, or purely culturally learned. Generally however, psychologists see it as being both: such expressions have an evolutionary basis but are highly influenced by cultural doctrine. From that perspective, explains psychologist Ursula Hess, the seven basic emotions can best be compared with a kid drawing a car: everyone will recognize it as a car, however, nowhere in real-life will one encounter a car looking like that. It is <em>prototypical</em>. Similarly, most people will categorize Ekman’s prototypical emotions in the same manner, but that does not imply that they are enacted in that exact same way in real life situations. Expressions of emotion (even sincere onces!) are generally considered to be shaped not only by a single state of mind, but by a rich context, including culture, the activity being undertaken, the mood one is in and a personal variation in physique and style.</p>
+
+    <p>The ambiguity of expressions is often ignored by developers when working with Ekman’s theory. I once was at a research presentation where the presenter showed an image of a face, asking the audience to guess which emotion was being expressed. The audience tried: ‘Anger!’, ‘Disgust!’, ‘Madness!’, ‘Annoyance!’ To which the presenter replied ‘no, this is clearly disgust.’ Not allowing for the multiplicity of interpretations to challenge her own rigid interpretation of the image.</p>
+
+    <p>Although the claim of intercultural universality of Ekman’s model is attractive when deploying software on a global scale: high esteemed companies, including Affectiva, Microsoft and Apple (Emotient), all of them base their software on a theory that is generally considered not to be suitable for real life situations.</p>
+
+    <h2>The Kuleshov Effect</h2>
+
+    <p>An example of the ambiguity of facial expression can be found in the Kuleshov Effect: at the beginning of the 20th century filmmaker Lev Kuleshov did an experiment for which he edited three video sequences. Each sequence showed the same ‘neutral’ face of a man, followed by the image of a dead man, a plate of soup or a woman (see the video). When these sequences were shown, the audience ‘raved about the acting’, believing the man who ‘looked’ at the dead man, the soup or the woman, was either expressing grief, hunger or desire.</p>
+
+    <video controls>
+      <source src="video/kuleshov.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <small class="video-caption">The Kuleshov Effect</small>
+
+    <figure>
+      <img src="img/5.png"/>
+      <figcaption>Screenshot of the Kuleshov effect being analysed by Microsoft Cognitive Services</figcaption>
+    </figure>
+
+    <p>Kuleshov’s editing experiment demonstrates that humans interpret facial expressions based on context. It renders the premise of emotion analysis software – a tool analyzing a person’s emotions solely based on facial expressions – questionable.</p>
+
+    <p>Moreover, the context in which emotions are expressed does not only affect how they are read; it also influences how people <em>express</em> their feelings, as is (remarkably enough) emphasized by Paul Ekman, who recorded American and Japanese subjects watching films depicting facial surgery. When watching alone, subjects from both groups showed similar responses. However, when watching the film in groups, the expressions differed.</p>
+
+    <blockquote>
+      <span>‘We broadcast emotion to the world; sometimes that broadcast is an expression of our internal state and other times it is contrived in order to fulfill (sic) social expectations.’</span>
+      <cite>ERIC SHOUS</cite>
+    </blockquote>
+
+    <p>Contrary to the assumptions of current implementations of emotion analysis, such social pressure is also present when one is alone behind a computer, for example watching video content. As Byron Reeves and Clifford Nass show, despite computers being asocial objects and us having no reason to hide our emotions when using them, our ‘interactions with computers, television, and new media are fundamentally social and natural, just like interactions in real life’.</p>
+
+    <ul class="bxslider">
+      <li><img src="img/6.jpg" title="A performance of The Tallest Man On Earth being analysed by Microsoft Cognitive Services" /></li>
+      <li><img src="img/7.png" title="A performance of The Tallest Man On Earth being analysed by Microsoft Cognitive Services" /></li>
+    </ul>
+
+    <p>Another example: consider a musician playing, he is immersed in his own musical world. When one would judge his mental state merely by his face, one might think he is in a state of sadness or disgust. However, the audience, whipped up by the music, ‘knows’ he must (also) feel delighted. Like with Kuleshov’s experiment, it is often this projection of a subjective experience onto somebody else that enables one to read the other’s face. How can a computer project emotions? Even when it would, to some extent, take context into consideration, there could be various ‘options’ for what the subject is experiencing. Not everybody enjoys the same music, many might feel the musician is overly dramatic.</p>
+
+    <p>These examples of mislabeling may seem an easy critique of the technology. Some might suggest these are issues that can and will be tackled in future releases of the software, for example by making the software automatically tune towards a specific individual, or by taking some contextual parameters into consideration. I would argue however, that these errors are fundamental to the procedure and can therefore not be solved by making more elaborate calculations. Central to this is the conceptualisation of <em>emotion</em>.</p>
+
+    <h2>Emotion as Information</h2>
+
+    <p>The attempt to computerize the recognition of emotions can be traced back to the MIT Media Lab where Rosalind Picard worked with Rana El Kaliouby in a research group on Affective Computing: a field of research that covers ‘computing that relates to, arises from, or deliberately influences emotion or other affective phenomena.’</p>
+
+    <p>With affective computing, emotions are digitized: they are considered as information. Emotions are thus treated analogously to Claude Shannon’s theory of information: there is a sender expressing an emotion, and a receiver interpreting the signal coming from a noisy medium. In this analogy, the success of the system can only be determined by identifying a correct, <em>discrete</em>, emotion in both the sender and receiver.</p>
+
+    <p>However, suggesting that a system has the ability to determine inner feelings from the surface, blurs the distinction between a system that describes behavior – one’s facial expression – and one that would describe a person’s inner, mental state. It blurs the measurable representation (the facial expression) with the underlying thing (the feeling).</p>
+
+    <p>Douglas Hofstadter, professor of cognitive science, illustrates this issue in <em>Gödel, Escher, Bach</em> when he discusses how a computer would understand the crying of a little girl: ‘…even if (a program) ‘understands’ in some intellectual sense what has been said, it will never really understand, until it, too, has cried and cried. And when will a computer do that?’ Is it then not true that, despite emotion recognition software being promoted as being able to ‘understand’ emotions, it will never be able to do that in a way that humans do? It can only measure and feign behavioral patterns. The ‘understanding’ only exists in the mind of the (human) user of the software.</p>
+
+    <p>According to Kirsten Boehner, researcher at Cornell University, the prominence in Affective Computing of an individually experienced yet measurable approach to emotion is explained by a ‘masculine, physically grounded’ ideal of science:</p>
+
+    <blockquote>
+      ‘during the process of becoming ‘studiable’ the definition of emotion has been altered to fit a particular conception of what science ought to be: rational, well-defined, and culturally universal. (…) emotion is not thought of as biological, measurable, and objectively present because scientists found it to exist in the world that way, but because 19th-century scientists could not imagine studying it scientifically any other way.’
+      <cite>KIRSTEN BOEHNER</cite>
+    </blockquote>
+
+    <p>Even though emotion is traditionally considered to be opposed to rational cognition, it has been redefined in order to fit a cognitive, scientific approach of study. In this process, the aspects of emotions that are not clearly delineated were left out of the discussion. Affective computing – and with it digital emotion recognition – is following a similar path: even though the digitization of emotions is often presented as a more humanistic approach to the highly cognitive computer sciences, it, according to Boehner, ‘reproduces the very conceptual foundations that it aims to radicalize’.</p>
+
+    <p>Some might suggest using other computer algorithms can bypass this problem: the computer should not be instructed to detect seven predefined classes, but should by itself cluster similar expressions based on the gathered data – in technical terms: <a href="https://en.wikipedia.org/wiki/Unsupervised_learning">unsupervised</a> rather than supervised machine learning algorithms should be used. Such an algorithm would value human interactions in a way that is not only unprecedented but most likely also incomprehensible by humans; it might even give rise to patterns humans are currently unaware of. However, in order for the measurements to be usable by humans, the measurements need to be translated into human language. Again, one arrives at the point of interpretation by a human agent, who will inevitably contaminate it with personal experiences and perceptions. Therefore, even in an algorithmic process, it cannot be ignored that the human evaluators and users of the software play a role in creating the emotions they are studying.</p>
+
+    <h2>Hysterical Detection</h2>
+
+    <p>I would like to problematize this physically grounded approach to emotion, which side steps the human evaluator, by drawing a historical parallel. Emotion, as formally defined by the American Psychological Association and used in Affective Computing, is a broad and seemingly all-encompassing concept, which includes the unconscious and the conscious, internal bodily responses and facial expressions:</p>
+
+    <blockquote>
+      ‘Emotion A complex pattern of changes, including physiological arousal, feelings, cognitive processes, and behavioral reactions, made in response to a situation perceived to be personally significant.’
+    </blockquote>
+
+    <p>It is a definition that seems to derive from the everyday use of the word and which is widely applied by psychologists in their day-to-day work. Nevertheless, when trying to quantify this concept, it could be exactly the extensiveness of the definition in which its danger lurks.</p>
+
+    <figure>
+      <img src="img/8.jpg">
+      <figcaption>Photographs from Paul Régnard’s Iconographie photographique de la Salpêtrière, volume III (1880)</figcaption>
+    </figure>
+
+    <p>In his book The Invention of Hysteria, George Didi-Huberman elaborates on how research into hysteria became a formalized discourse. When in the 19th century Jean-Martin Charcot started to empirically study hysteria, it had always been seen as a female mental disorder. Despite endless observations of patients, no clear cause for the illness was found. However, rather than reconsidering the illness itself, the formal definition of hysteria became broad and all-inclusive. There were classifications, but they were more or less classifications of the unknown. In order to substantiate these classifications, Charcot and his fellow doctors required a massive set of data to work from and exhaustive descriptions of ‘states of the body’ became the norm. The patients’ bodies were no longer presentations of an individual, but rather representations of an illness.</p>
+
+    <p>Photography, a new invention in those days, was seen as the answer to the desire for an objective way of registering the symptoms of the illness. Seemingly substantiating the research being done, the immense documentation in text and images was not neutral though: the observers sought for specific anomalies, and by prioritizing the deviant, they effectively rewarded and encouraged such behavior in their patients. Nowadays hysteria is not considered a distinguishable mental illness anymore and the feminine aspect of it is merely considered sexist. In hindsight, Didi-Huberman calls hysteria the ‘neurosis of an immense discursive apparatus’. A neurosis that required endless descriptions of patients and strict procedures in order to justify the treatments of the patients. The massive administration, focused on capturing hysteria, effectively clouded the illness. As Didi-Huberman points out, the ‘ideal of the <em>exhaustive description</em>’ of hysteria might have grown from the hope that seeing can be foreseeing.</p>
+
+    <ul class="bxslider">
+      <li><img src="img/9.png" title="Poyet Photography at the Salpêtrière" /></li>
+      <li><img src="img/10.jpg" title="A contemporary data center" /></li>
+    </ul>
+
+    <p>Similarly, the many – sometimes overlapping, sometimes contradictory – accounts of what ‘emotion’ entails, demonstrate the ambiguity of the term. Any definition of the term seems under heavy influence of its indefinite informal use. These definitions might work for psychologists in their day-to-day interactions with patients. When trying to quantify it however, with its definition so broad and vague – encapsulating how we feel, look, and sound – ‘emotion’ seems to be a concept that is susceptible for such a ‘neurosis’ as well. By presenting emotion analysis software as a clearly defined technology, which is capable of ‘accurate’ measurements, a joint venture of psychology, computer sciences and marketing skims over the ambiguity of the concept ‘emotion’.</p>
+
+    <figure>
+      <img src="img/11.png">
+      <figcaption>Screenshot of Affectiva’s homepage</figcaption>
+    </figure>
+
+    <p>It is not a far stretch to compare the immense data gathered by companies such as Affectiva, which claims to have indexed almost 4 million faces, to the data gathered in the 19th century. In both cases a new, supposedly objective, technology was used to validate the classification procedure. In both cases, with strict procedures for prediction, seeing supposedly becomes foreseeing.</p>
+
+    <p>Key here is not only that the classification procedure in and of itself is flawed; the main concern is that the definitions that delineate the technology are flawed. As there seems not to be a clear definition of ‘emotion’, how can one know what is being measured by emotion analysis tools? Like with the case of hysteria, it is merely the connotation of ‘emotion’ in everyday language that gives the illusion of knowing what is being quantified.</p>
+
+    <h2>Registering Stereotypes</h2>
+
+    <p>When being aware of contemporary marketing, it comes as no surprise that on their websites companies such as Microsoft and Affectiva pass by these discussions and present their software as a definitive answer. But if indeed emotions are not concrete, delineated experiences, how can these software products, which use such a coarse, seven-term language, be so successfully marketed? I would suggest it is precisely this coarse language that benefits the marketing of emotion analysis software.</p>
+
+    <hr/>
+
+    <h3>References</h3>
+
+    <ul>
+      <li>Boehner, Kirsten, Rogério DePaula, Paul Dourish, and Phoebe Sengers. 2007. ‘How Emotion Is Made and Measured.’ <em>International Journal of Human-Computer Studies</em> 65 (4). Elsevier: 275-91.</li>
+      <li>Debord, Guy. (1967) 2014. <em>Society of the Spectacle</em>. Translated by Ken Knabb. Bureau of Public Secrets.</li>
+      <li>Didi-Huberman, Georges. (1982) 2003. <em>Invention of Hysteria: Charcot and the Photographic Iconography of the Salpêtrière</em>. Translated by Alisa Hartz. Mit Press.</li>
+    </ul>
+
+    <hr/>
+
+    <img src="img/ruben.png" class="img-circle bio-pic" /> 
+
+    <p class="bio">Combining his backgrounds in filmmaking and programming, Ruben van de Ven (NL) challenges alleged objective practices. He is intrigued by the intersection of highly cognitive practices and ambiguous experiences. In his last works he investigates computational quantification of emotions.</p>
+
+
+
+  </div><!-- /.container -->
+
+  <div class="more">
+    <h3>Previously on the INC Longforms:</h3>
+  </div>
+
+  <div class="wide-stripe" style="background-image:url(img/punchcard.png);">
+    <div class="col-md-8 col-md-offset-2">
+        <h6 class="main-color">Cybernetics</h6>
+        <h1>On Socialist Cybernetics, Accelerationist Dreams and Tiqqun’s Nightmares</h1>
+        <h4 class="main-color">by <a href="#" class="upper">Paul Buckermann</a></h4> <!-- INSERT INTERNAL LINK TO BIO -->
+        <h6 >December 19th, 2016</h6>
+      </div>
+  </div>
+
+  <footer class="footer navbar-inverse">
+    <div class="container">
+      <p class="text-muted">Institute of Network Cultures</p>
+    </div>
+  </footer>
+
+  <script src="lib/jquery-3.1.1.min.js"></script>
+  <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+  <script src="js/reading-pos.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        captions: true
+      });
+    });
+  </script>
+</body>
+</html>

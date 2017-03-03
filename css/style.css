@@ -1,0 +1,183 @@
+/* general */
+
+body,html {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+/* colors */
+
+.main-color {
+  color: #ff4000;
+}
+
+.sec-color {
+  color: white;
+}
+
+/* typography */
+
+@font-face {
+  font-family: 'Playfair';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf) format('truetype');
+}
+
+blockquote {
+  font-family: 'Playfair';
+}
+
+.h0 {
+  font-size: 8rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+
+
+/* header */
+
+progress {
+  z-index: 9999;
+  height: .15em;
+  color: #ff4000;
+}
+
+#top-navbar {
+  background-color: white;
+  -webkit-box-shadow: 0 0 12px -2px rgba(0,0,0,.75);
+  box-shadow: 0 0 12px -2px rgba(0,0,0,.75);
+}
+
+.wide {
+  width:100%;
+  height:100%;
+  height:calc(100% - 1px);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.masthead {
+  margin-top: 20vh;
+}
+
+/* content */
+
+.container {
+  float: none;
+}
+
+.content {
+  margin-top: 10%;
+}
+
+.content p {
+  font-size: 140%;
+  line-height: 160%;
+  margin: 0 0 40px;
+}
+
+blockquote {
+  background-color: #222;
+  color: white;
+  padding: 40px;
+  margin: 40px auto; 
+  border: none;
+  font-size: 3.5rem;
+}
+
+.bx-wrapper {
+  margin-top: 40px;
+  max-width: 75% !important;
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 40px;
+}
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  border-top: 1px solid black;
+  padding-top: 20px;
+  margin: 20px auto 40px auto;
+  display: block;
+  font-size: 85%;
+}
+
+figure.big {
+  width: 140%;
+  margin-left: -20%;
+}
+figure.big img {
+  width: 100%;
+}
+
+video {
+  margin: 0 auto 40px auto;
+  width: 140%;
+  margin-left: -20%;
+}
+
+.video-caption {
+  border-top: 1px solid black;
+  padding-top: 20px;
+  margin: -20px auto 40px auto;
+  display: block;
+}
+
+.bio-pic {
+  width: 150px;
+  height: auto;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+.content p.bio {
+  font-size: 120%;
+}
+
+/* more */
+
+.more {
+  margin-top: 80px;
+  background-color: #222;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.more h3 {
+  margin: 0;
+}
+
+.wide-stripe {
+  width:100%;
+  height:40%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.wide-stripe div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin: 40px auto;
+}
